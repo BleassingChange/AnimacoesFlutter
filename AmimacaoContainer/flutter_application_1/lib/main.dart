@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class Distination extends StatelessWidget {
+class HomeScream extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -134,3 +134,23 @@ class Distination extends StatelessWidget {
     );
   }
 }
+
+
+class Destination extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Pagina Destinataria')
+      ),
+      body: Center(
+        child: Text('this is Home page'),
+      ),
+
+
+
+    );
+  }
+}
+
