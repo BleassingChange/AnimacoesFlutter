@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
+import 'package:animations/animations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HomeScream(),
     );
   }
 }
@@ -119,39 +120,30 @@ class _MyHomePageState extends State<MyHomePage> {
 class HomeScream extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Pagina Destinataria')
-      ),
+      appBar: AppBar(title: Text('Pagina Home')),
       body: Center(
         child: Text('this is Home page'),
       ),
-      floatingActionButton: ,
-
-
-
+      floatingActionButton: OpenContainer(
+      transitionDuration:Duration(seconds: 3),
+        closedBuilder: (context, openWidget) {
+        return FloatingActionButton(onPressed: openWidget);
+      }, openBuilder: (context, closeWidget) {
+        return Destination();
+      }),
     );
   }
 }
-
 
 class Destination extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Pagina Destinataria')
-      ),
+      appBar: AppBar(title: Text('Pagina Destinataria')),
       body: Center(
         child: Text('this is Home page'),
       ),
-      floatingActionButton: ,
-
-
-
     );
   }
 }
-
