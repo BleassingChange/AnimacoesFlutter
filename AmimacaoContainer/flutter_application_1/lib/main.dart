@@ -147,6 +147,7 @@ class Destination extends StatelessWidget {
       body: Center(
         child: Text('this is Home page'),
       ),
+      floatingActionButton: ,
 
 
 
