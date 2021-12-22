@@ -123,7 +123,7 @@ class HomeScream extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Pagina Home')),
       body: Center(
-        child: Text('this is Home page'),
+        child: Text('Pagina Principal'),
       ),
       floatingActionButton: OpenContainer(
       transitionDuration:Duration(seconds: 3),
