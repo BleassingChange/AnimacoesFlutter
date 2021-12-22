@@ -1,8 +1,8 @@
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, unused_import
+
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
 
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:page_transition/page_transition.dart';
 
 
 void main() {
