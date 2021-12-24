@@ -44,7 +44,8 @@ class MyApp extends StatelessWidget {
                   child: Center(child: Text('Hover Me..')),
                 ),
               )
-            ]),
+            ],
+            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
